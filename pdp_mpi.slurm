@@ -10,6 +10,13 @@
 MACHINEFILE="nodes.$SLURM_JOB_ID"
 srun -l hostname | sort -n | awk '{print $2}' > $MACHINEFILE
 
+cd $SCRATCH
+rm -rf pdp_mpi
+git clone --depth 1 https://github.com/kerszamaral/pdp_mpi.git ./pdp_mpi
+cd pdp_mpi
+make clean
+make
+
 declare -a MATRIX_SIZES=(
     "1024"
     "2048"
