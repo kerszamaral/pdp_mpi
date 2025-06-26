@@ -26,27 +26,41 @@ int main(int argc, char* argv[]) {
         initialize_matrices(n, A, B, C);
     }
 
-    double t1, t2;
-    if(rank == 0)
-	    t1 = MPI_Wtime();
+    double t_start = 0.0, t_end = 0.0;
+    if (rank == 0)
+        t_start = MPI_Wtime();
 
+    double comm_time = 0.0;
+    double comm_start, comm_end;
 
     double* local_A = (double*)malloc((n * n / size) * sizeof(double));
     double* local_C = (double*)malloc((n * n / size) * sizeof(double));
 
+    // Comunicação: distribuição da matriz A
     if (rank == 0) {
         for (int i = 1; i < size; i++) {
+            comm_start = MPI_Wtime();
             MPI_Send(A + i * (n * n / size), n * n / size, MPI_DOUBLE, i, 0, MPI_COMM_WORLD);
+            comm_end = MPI_Wtime();
+            comm_time += comm_end - comm_start;
         }
         for (int i = 0; i < n * n / size; i++) {
             local_A[i] = A[i];
         }
     } else {
+        comm_start = MPI_Wtime();
         MPI_Recv(local_A, n * n / size, MPI_DOUBLE, 0, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
+        comm_end = MPI_Wtime();
+        comm_time += comm_end - comm_start;
     }
 
+    // Comunicação: broadcast da matriz B
+    comm_start = MPI_Wtime();
     MPI_Bcast(B, n * n, MPI_DOUBLE, 0, MPI_COMM_WORLD);
+    comm_end = MPI_Wtime();
+    comm_time += comm_end - comm_start;
 
+    // Cálculo local
     for (int i = 0; i < n / size; i++) {
         for (int j = 0; j < n; j++) {
             local_C[i * n + j] = 0.0;
@@ -56,33 +70,32 @@ int main(int argc, char* argv[]) {
         }
     }
 
+    // Comunicação: coleta dos resultados em C
     if (rank == 0) {
         for (int i = 0; i < n * n / size; i++) {
             C[i] = local_C[i];
         }
         for (int i = 1; i < size; i++) {
+            comm_start = MPI_Wtime();
             MPI_Recv(C + i * (n * n / size), n * n / size, MPI_DOUBLE, i, 1, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
+            comm_end = MPI_Wtime();
+            comm_time += comm_end - comm_start;
         }
     } else {
+        comm_start = MPI_Wtime();
         MPI_Send(local_C, n * n / size, MPI_DOUBLE, 0, 1, MPI_COMM_WORLD);
+        comm_end = MPI_Wtime();
+        comm_time += comm_end - comm_start;
     }
 
-   if(rank == 0){
-	t2 = MPI_Wtime();
-	printf("Execution time: %.6f\n", t2 - t1);
-   }
-
-
-/*    if (rank == 0) {
-        printf("Result Matrix:\n");
-        for (int i = 0; i < n; i++) {
-            for (int j = 0; j < n; j++) {
-                printf("%f ", C[i * n + j]);
-            }
-            printf("\n");
-        }
+    if (rank == 0) {
+        t_end = MPI_Wtime();
+        printf("Execution time: %.6f seconds\n", t_end - t_start);
     }
-*/
+
+    // Mostra o tempo de comunicação de cada processo
+    printf("Rank %d - Communication time: %.6f seconds\n", rank, comm_time);
+
     free(A);
     free(B);
     free(C);

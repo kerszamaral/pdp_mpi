@@ -33,9 +33,18 @@ int main(int argc, char* argv[]) {
     if(rank == 0)
 	    t1 = MPI_Wtime();
 
+    double comm_time = 0.0;
+    double comm_start, comm_end;
 
+    comm_start = MPI_Wtime();
     MPI_Scatter(A, n * n / size, MPI_DOUBLE, local_A, n * n / size, MPI_DOUBLE, 0, MPI_COMM_WORLD);
+    comm_end = MPI_Wtime();
+    comm_time += (comm_end - comm_start);
+
+    comm_start = MPI_Wtime();
     MPI_Bcast(B, n * n, MPI_DOUBLE, 0, MPI_COMM_WORLD);
+    comm_end = MPI_Wtime();
+    comm_time += (comm_end - comm_start);
 
     for (int i = 0; i < n / size; i++) {
         for (int j = 0; j < n; j++) {
@@ -46,12 +55,17 @@ int main(int argc, char* argv[]) {
         }
     }
 
+    comm_start = MPI_Wtime();
     MPI_Gather(local_C, n * n / size, MPI_DOUBLE, C, n * n / size, MPI_DOUBLE, 0, MPI_COMM_WORLD);
+    comm_end = MPI_Wtime();
+    comm_time += (comm_end - comm_start);
 
     if(rank == 0){
 	    t2 = MPI_Wtime();
 	    printf("Execution time: %.6f\n", t2 - t1);
     }
+
+    printf("Rank %d - Communication time: %.6f seconds\n", rank, comm_time);
 
 /*    if (rank == 0) {
         printf("Result Matrix:\n");
