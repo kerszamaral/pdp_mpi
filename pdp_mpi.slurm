@@ -7,13 +7,14 @@
 #SBATCH --output=%x_%j.out
 #SBATCH --error=%x_%j.err
 
-MACHINEFILE="nodes.$SLURM_JOB_ID"
-srun -l hostname | sort -n | awk '{print $2}' > $MACHINEFILE
-
 cd $SCRATCH
 rm -rf pdp_mpi
 git clone --depth 1 https://github.com/kerszamaral/pdp_mpi.git ./pdp_mpi
 cd pdp_mpi
+
+MACHINEFILE="nodes.$SLURM_JOB_ID"
+srun -l hostname | sort -n | awk '{print $2}' > $MACHINEFILE
+
 make clean
 make
 
