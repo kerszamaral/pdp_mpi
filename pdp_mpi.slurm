@@ -80,6 +80,12 @@ for process_type in "${PROCESS_TYPES[@]}"; do
                    --bind-to none \
                    ./mpi_$process_type $matrix_size
 
+            exit_code=$?
+            if [ $exit_code -ne 0 ]; then
+                echo "Error: Process $process_type with matrix size $matrix_size and $num_procs processes failed with exit code $exit_code" >&2
+                exit $exit_code
+            fi
+
             echo "Finished running $process_type with matrix size $matrix_size and $num_procs processes" >&2
             echo "----------------------------------------" >&2
             echo "" >&2
