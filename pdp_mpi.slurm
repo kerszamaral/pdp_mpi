@@ -31,7 +31,7 @@ max_procs=$SLURM_NTASKS
 declare -a NUM_PROCS=(
     $(expr $max_procs / 8)
     $(expr $max_procs / 4)
-    $(expr $max_procs / 5 + $max_procs / 8)
+    $(expr $max_procs / 4 + $max_procs / 8)
     $(expr $max_procs / 2)
     $(expr $max_procs / 2 + $max_procs / 8)
     $(expr $max_procs / 2 + $max_procs / 4)
