@@ -65,11 +65,13 @@ overall_start=$(date +%s.%N)
 for process_type in "${PROCESS_TYPES[@]}"; do
     for matrix_size in "${MATRIX_SIZES[@]}"; do
         for num_procs in "${NUM_PROCS[@]}"; do
-            echo "----------------------------------------"
-            echo "Running process type: $process_type"
-            echo "Matrix size: $matrix_size"
-            echo "Number of processes: $num_procs"
-            echo "----------------------------------------"
+            echo "----------------------------------------" >&2
+            echo "Running process type: $process_type" >&2
+            echo "Matrix size: $matrix_size" >&2
+            echo "Number of processes: $num_procs" >&2
+            current_time=$(date '+%d-%m-%Y %H:%M:%S.%M')
+            echo "Current time: $current_time" >&2
+            echo "----------------------------------------" >&2
 
             mpirun -np $num_procs \
                    -machinefile $MACHINEFILE \
@@ -78,9 +80,9 @@ for process_type in "${PROCESS_TYPES[@]}"; do
                    --bind-to none \
                    ./mpi_$process_type $matrix_size
 
-            echo "Finished running $process_type with matrix size $matrix_size and $num_procs processes"
-            echo "----------------------------------------"
-            echo ""
+            echo "Finished running $process_type with matrix size $matrix_size and $num_procs processes" >&2
+            echo "----------------------------------------" >&2
+            echo "" >&2
         done
     done
 done
