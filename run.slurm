@@ -1,9 +1,9 @@
 #!/bin/bash
-#SBATCH --job-name=mpi_coletiva
+#SBATCH --job-name=pdp_mpi_test
 #SBATCH --partition=hype
 #SBATCH --nodes=2
 #SBATCH --ntasks=40
-#SBATCH --time=2:00:00
+#SBATCH --time=4:00:00
 #SBATCH --output=%x_%j.out
 #SBATCH --error=%x_%j.err
 
@@ -14,12 +14,20 @@ declare -a MATRIX_SIZES=(
     "1024"
     "2048"
     "4096"
+    # "8192"
+    # "16384"
+    # "32768"
 )
 
 max_procs=$SLURM_NTASKS
 declare -a NUM_PROCS=(
-
-
+    $(expr $max_procs / 8)
+    $(expr $max_procs / 4)
+    $(expr $max_procs / 5 + $max_procs / 8)
+    $(expr $max_procs / 2)
+    $(expr $max_procs / 2 + $max_procs / 8)
+    $(expr $max_procs / 2 + $max_procs / 4)
+    $(expr $max_procs / 2 + $max_procs / 4 + $max_procs / 8)
     $max_procs
 )
 
