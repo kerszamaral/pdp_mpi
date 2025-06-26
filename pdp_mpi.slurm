@@ -22,20 +22,20 @@ declare -a MATRIX_SIZES=(
     "1024"
     "2048"
     "4096"
-    "8192"
+    # "8192"
     # "16384"
     # "32768"
 )
 
 max_procs=$SLURM_NTASKS
 declare -a NUM_PROCS=(
-    $(expr $max_procs / 8)
+    # $(expr $max_procs / 8)
     $(expr $max_procs / 4)
-    $(expr $max_procs / 4 + $max_procs / 8)
+    # $(expr $max_procs / 4 + $max_procs / 8)
     $(expr $max_procs / 2)
-    $(expr $max_procs / 2 + $max_procs / 8)
+    # $(expr $max_procs / 2 + $max_procs / 8)
     $(expr $max_procs / 2 + $max_procs / 4)
-    $(expr $max_procs / 2 + $max_procs / 4 + $max_procs / 8)
+    # $(expr $max_procs / 2 + $max_procs / 4 + $max_procs / 8)
     $max_procs
 )
 
