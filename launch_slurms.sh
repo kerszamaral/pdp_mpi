@@ -36,7 +36,7 @@ declare -a NUM_PROCS=(
     # $(expr $max_procs / 2 + $max_procs / 4 + $max_procs / 8)
     $max_procs
 )
-declare -a NUM_PROCS=($(printf '%s\n' "${NUM_PROCS[@]}" | sort -nu)) # Remove duplicates and sort
+declare -a NUM_PROCS=($(printf '%s\n' "${NUM_PROCS[@]}" | sort -nur)) # Remove duplicates and sort
 
 declare -a PROCESS_TYPES=(
     "coletiva"
@@ -54,10 +54,9 @@ echo "----------------------------------------"
 echo ""
 
 overall_start=$(date +%s.%N)
-for process_type in "${PROCESS_TYPES[@]}"; do
+for num_procs in "${NUM_PROCS[@]}"; do
     for matrix_size in "${MATRIX_SIZES[@]}"; do
-        for num_procs in "${NUM_PROCS[@]}"; do
-
+        for process_type in "${PROCESS_TYPES[@]}"; do
             slurm_job_name="mpi_${process_type}_${matrix_size}_${num_procs}"
             slurm_num_tasks=$num_procs
             slurm_time_limit="2:00:00"
