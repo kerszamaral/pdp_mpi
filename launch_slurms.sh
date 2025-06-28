@@ -8,7 +8,11 @@ JOBS_DIR="pdp_mpi_jobs"
 rm -rf $JOBS_DIR
 mkdir -p $JOBS_DIR
 
+OUTPUT_DIR="pdp_mpi_outs"
+mkdir -p $OUTPUT_DIR
+
 $CODE_DIR=$(pwd)
+echo "Using code dir as $CODE_DIR"
 make clean
 make
 
@@ -126,10 +130,13 @@ echo \"# ----------------------------------------\" >&2
             # Submit the job to SLURM
             if [ "$1" == "--launch" ]
             then
+                cd $OUTPUT_DIR
                 echo "Submitting job: $slurm_job_name"
-                sbatch "$temp_job_file"
+                sbatch "../$temp_job_file"
+                cd ..
             else
                 echo "Dry run: Would submit job: $slurm_job_name"
+                echo "Would run: 'sbatch \"../$temp_job_file\"'"
                 echo "To actually submit, run with --launch option."
             fi
         done
