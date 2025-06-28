@@ -73,6 +73,8 @@ MACHINEFILE=\"nodes.\$SLURM_JOB_ID\"
 srun -l hostname | sort -n | awk '{print \$2}' > \$MACHINEFILE
 
 echo \"# ----------------------------------------\"
+echo \"# job id: \$SLURM_JOB_ID\"
+echo \"# job name: $slurm_job_name\"
 echo \"# Running process type: $slurm_process_type\"
 echo \"# Matrix size: $slurm_matrix_size\"
 echo \"# Number of processes: $slurm_num_tasks\"
@@ -81,6 +83,8 @@ echo \"# Current time: \$current_time\"
 echo \"# ----------------------------------------\"
 
 echo \"# ----------------------------------------\" >&2
+echo \"# job id: \$SLURM_JOB_ID\" >&2
+echo \"# job name: $slurm_job_name\" >&2
 echo \"# Running process type: $slurm_process_type\" >&2
 echo \"# Matrix size: $slurm_matrix_size\" >&2
 echo \"# Number of processes: $slurm_num_tasks\" >&2
