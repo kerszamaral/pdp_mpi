@@ -11,7 +11,7 @@ mkdir -p $JOBS_DIR
 OUTPUT_DIR="pdp_mpi_outs"
 mkdir -p $OUTPUT_DIR
 
-$CODE_DIR=$(pwd)
+CODE_DIR=$(pwd)
 echo "Using code dir as $CODE_DIR"
 make clean
 make
