@@ -73,6 +73,14 @@ for process_type in "${PROCESS_TYPES[@]}"; do
             echo "Current time: $current_time" >&2
             echo "----------------------------------------" >&2
 
+            echo "----------------------------------------"
+            echo "Running process type: $process_type" 
+            echo "Matrix size: $matrix_size" 
+            echo "Number of processes: $num_procs" 
+            current_time=$(date '+%d-%m-%Y %H:%M:%S.%M')
+            echo "Current time: $current_time" 
+            echo "----------------------------------------" 
+
             mpirun -np $num_procs \
                    -machinefile $MACHINEFILE \
                    --mca btl ^openib \
@@ -83,12 +91,17 @@ for process_type in "${PROCESS_TYPES[@]}"; do
             exit_code=$?
             if [ $exit_code -ne 0 ]; then
                 echo "Error: Process $process_type with matrix size $matrix_size and $num_procs processes failed with exit code $exit_code" >&2
-                exit $exit_code
+                echo "Error: Process $process_type with matrix size $matrix_size and $num_procs processes failed with exit code $exit_code"
+                continue
             fi
 
             echo "Finished running $process_type with matrix size $matrix_size and $num_procs processes" >&2
             echo "----------------------------------------" >&2
             echo "" >&2
+
+            echo "Finished running $process_type with matrix size $matrix_size and $num_procs processes"
+            echo "----------------------------------------"
+            echo ""
         done
     done
 done
