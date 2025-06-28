@@ -9,6 +9,8 @@ rm -rf $JOBS_DIR
 mkdir -p $JOBS_DIR
 
 $CODE_DIR=$(pwd)
+make clean
+make
 
 declare -a MATRIX_SIZES=(
     "1024"
