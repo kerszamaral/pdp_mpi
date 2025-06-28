@@ -1,0 +1,608 @@
+rm -rf mpi_coletiva mpi_p2p_bloqueante mpi_p2p_naobloqueante
+mpicc mpi_coletiva.c -o mpi_coletiva
+mpicc mpi_p2p_bloqueante.c -o mpi_p2p_bloqueante
+mpicc mpi_p2p_naobloqueante.c -o mpi_p2p_naobloqueante
+Running MPI processes with the following configurations:
+----------------------------------------
+MACHINEFILE: nodes.713529
+MATRIX_SIZES: 1024 2048 4096
+NUM_PROCS: 10 20 30 40
+PROCESS_TYPES: coletiva p2p_bloqueante p2p_naobloqueante
+----------------------------------------
+
+----------------------------------------
+Running process type: coletiva
+Matrix size: 1024
+Number of processes: 10
+Current time: 28-06-2025 03:22:03.22
+----------------------------------------
+Rank 7 - Communication time: 0.037355 seconds
+Rank 3 - Communication time: 0.036706 seconds
+Rank 9 - Communication time: 0.065958 seconds
+Rank 5 - Communication time: 0.039596 seconds
+Rank 6 - Communication time: 0.134133 seconds
+Rank 1 - Communication time: 0.154855 seconds
+Rank 2 - Communication time: 0.328094 seconds
+Rank 4 - Communication time: 0.185574 seconds
+Execution time: 1.530871
+Rank 0 - Communication time: 0.021888 seconds
+Rank 8 - Communication time: 0.188788 seconds
+Finished running coletiva with matrix size 1024 and 10 processes
+----------------------------------------
+
+----------------------------------------
+Running process type: coletiva
+Matrix size: 1024
+Number of processes: 20
+Current time: 28-06-2025 03:24:18.24
+----------------------------------------
+Rank 19 - Communication time: 0.066066 seconds
+Rank 13 - Communication time: 0.067397 seconds
+Rank 7 - Communication time: 0.061757 seconds
+Rank 1 - Communication time: 0.171541 seconds
+Rank 9 - Communication time: 0.137042 seconds
+Rank 3 - Communication time: 0.090622 seconds
+Rank 2 - Communication time: 0.060923 seconds
+Rank 11 - Communication time: 0.059706 seconds
+Rank 10 - Communication time: 0.201311 seconds
+Rank 5 - Communication time: 0.059285 seconds
+Rank 6 - Communication time: 0.228353 seconds
+Rank 4 - Communication time: 0.221699 seconds
+Rank 15 - Communication time: 0.185076 seconds
+Rank 14 - Communication time: 0.060594 seconds
+Rank 12 - Communication time: 0.249814 seconds
+Rank 8 - Communication time: 0.136532 seconds
+Rank 17 - Communication time: 0.348735 seconds
+Rank 18 - Communication time: 0.348138 seconds
+Execution time: 0.975610
+Rank 0 - Communication time: 0.225466 seconds
+Rank 16 - Communication time: 0.061685 seconds
+Finished running coletiva with matrix size 1024 and 20 processes
+----------------------------------------
+
+----------------------------------------
+Running process type: coletiva
+Matrix size: 1024
+Number of processes: 30
+Current time: 28-06-2025 03:26:34.26
+----------------------------------------
+10 total processes failed to start
+Error: Process coletiva with matrix size 1024 and 30 processes failed with exit code 132
+----------------------------------------
+Running process type: coletiva
+Matrix size: 1024
+Number of processes: 40
+Current time: 28-06-2025 03:28:45.28
+----------------------------------------
+20 total processes failed to start
+Error: Process coletiva with matrix size 1024 and 40 processes failed with exit code 132
+----------------------------------------
+Running process type: coletiva
+Matrix size: 2048
+Number of processes: 10
+Current time: 28-06-2025 03:30:56.30
+----------------------------------------
+Rank 9 - Communication time: 0.105711 seconds
+Rank 5 - Communication time: 0.106748 seconds
+Rank 1 - Communication time: 0.580100 seconds
+Rank 7 - Communication time: 1.212800 seconds
+Rank 6 - Communication time: 0.112200 seconds
+Rank 3 - Communication time: 0.105739 seconds
+Rank 2 - Communication time: 0.658998 seconds
+Rank 4 - Communication time: 1.757159 seconds
+Execution time: 25.106879
+Rank 0 - Communication time: 0.547830 seconds
+Rank 8 - Communication time: 1.537865 seconds
+Finished running coletiva with matrix size 2048 and 10 processes
+----------------------------------------
+
+----------------------------------------
+Running process type: coletiva
+Matrix size: 2048
+Number of processes: 20
+Current time: 28-06-2025 03:33:35.33
+----------------------------------------
+Rank 7 - Communication time: 0.192959 seconds
+Rank 19 - Communication time: 0.160620 seconds
+Rank 17 - Communication time: 0.260734 seconds
+Rank 18 - Communication time: 0.435413 seconds
+Rank 3 - Communication time: 0.239388 seconds
+Rank 11 - Communication time: 0.292743 seconds
+Rank 13 - Communication time: 0.171767 seconds
+Rank 1 - Communication time: 0.643718 seconds
+Rank 2 - Communication time: 0.347324 seconds
+Rank 15 - Communication time: 0.250156 seconds
+Rank 14 - Communication time: 0.174568 seconds
+Rank 5 - Communication time: 0.754343 seconds
+Rank 6 - Communication time: 0.852365 seconds
+Rank 4 - Communication time: 0.171861 seconds
+Rank 9 - Communication time: 0.172860 seconds
+Rank 10 - Communication time: 2.563712 seconds
+Rank 12 - Communication time: 2.610604 seconds
+Rank 8 - Communication time: 2.493759 seconds
+Execution time: 15.210192
+Rank 0 - Communication time: 2.351556 seconds
+Rank 16 - Communication time: 2.662278 seconds
+Finished running coletiva with matrix size 2048 and 20 processes
+----------------------------------------
+
+----------------------------------------
+Running process type: coletiva
+Matrix size: 2048
+Number of processes: 30
+Current time: 28-06-2025 03:36:05.36
+----------------------------------------
+10 total processes failed to start
+Error: Process coletiva with matrix size 2048 and 30 processes failed with exit code 132
+----------------------------------------
+Running process type: coletiva
+Matrix size: 2048
+Number of processes: 40
+Current time: 28-06-2025 03:38:17.38
+----------------------------------------
+20 total processes failed to start
+Error: Process coletiva with matrix size 2048 and 40 processes failed with exit code 132
+----------------------------------------
+Running process type: coletiva
+Matrix size: 4096
+Number of processes: 10
+Current time: 28-06-2025 03:40:28.40
+----------------------------------------
+Rank 9 - Communication time: 0.665886 seconds
+Rank 7 - Communication time: 2.511422 seconds
+Rank 5 - Communication time: 0.831064 seconds
+Rank 6 - Communication time: 0.685063 seconds
+Rank 3 - Communication time: 0.381528 seconds
+Rank 1 - Communication time: 53.304138 seconds
+Rank 2 - Communication time: 51.507522 seconds
+Rank 4 - Communication time: 51.174155 seconds
+Execution time: 256.306211
+Rank 0 - Communication time: 0.191452 seconds
+Rank 8 - Communication time: 53.183970 seconds
+Finished running coletiva with matrix size 4096 and 10 processes
+----------------------------------------
+
+----------------------------------------
+Running process type: coletiva
+Matrix size: 4096
+Number of processes: 20
+Current time: 28-06-2025 03:46:57.46
+----------------------------------------
+Rank 7 - Communication time: 1.037313 seconds
+Rank 17 - Communication time: 0.395214 seconds
+Rank 19 - Communication time: 0.382199 seconds
+Rank 18 - Communication time: 0.796325 seconds
+Rank 15 - Communication time: 0.413998 seconds
+Rank 9 - Communication time: 1.962693 seconds
+Rank 13 - Communication time: 1.722997 seconds
+Rank 14 - Communication time: 2.052221 seconds
+Rank 3 - Communication time: 0.413823 seconds
+Rank 11 - Communication time: 0.414770 seconds
+Rank 10 - Communication time: 1.192628 seconds
+Rank 12 - Communication time: 1.000438 seconds
+Rank 1 - Communication time: 3.532801 seconds
+Rank 2 - Communication time: 1.567317 seconds
+Rank 5 - Communication time: 0.418504 seconds
+Rank 6 - Communication time: 16.373744 seconds
+Rank 4 - Communication time: 16.784717 seconds
+Rank 8 - Communication time: 15.568366 seconds
+Execution time: 123.054976
+Rank 0 - Communication time: 14.189825 seconds
+Rank 16 - Communication time: 16.618345 seconds
+Finished running coletiva with matrix size 4096 and 20 processes
+----------------------------------------
+
+----------------------------------------
+Running process type: coletiva
+Matrix size: 4096
+Number of processes: 30
+Current time: 28-06-2025 03:51:14.51
+----------------------------------------
+10 total processes failed to start
+Error: Process coletiva with matrix size 4096 and 30 processes failed with exit code 132
+----------------------------------------
+Running process type: coletiva
+Matrix size: 4096
+Number of processes: 40
+Current time: 28-06-2025 03:53:26.53
+----------------------------------------
+20 total processes failed to start
+Error: Process coletiva with matrix size 4096 and 40 processes failed with exit code 132
+----------------------------------------
+Running process type: p2p_bloqueante
+Matrix size: 1024
+Number of processes: 10
+Current time: 28-06-2025 03:55:37.55
+----------------------------------------
+Rank 1 - Communication time: 0.035501 seconds
+Rank 2 - Communication time: 0.035333 seconds
+Rank 3 - Communication time: 0.035151 seconds
+Rank 4 - Communication time: 0.044353 seconds
+Rank 5 - Communication time: 0.082817 seconds
+Rank 6 - Communication time: 0.068797 seconds
+Rank 7 - Communication time: 0.055357 seconds
+Rank 8 - Communication time: 0.067219 seconds
+Rank 9 - Communication time: 0.094102 seconds
+Execution time: 1.385890 seconds
+Rank 0 - Communication time: 0.063022 seconds
+Finished running p2p_bloqueante with matrix size 1024 and 10 processes
+----------------------------------------
+
+----------------------------------------
+Running process type: p2p_bloqueante
+Matrix size: 1024
+Number of processes: 20
+Current time: 28-06-2025 03:57:51.57
+----------------------------------------
+Rank 1 - Communication time: 0.068217 seconds
+Rank 2 - Communication time: 0.074146 seconds
+Rank 3 - Communication time: 0.122681 seconds
+Rank 4 - Communication time: 0.065209 seconds
+Rank 5 - Communication time: 0.124494 seconds
+Rank 6 - Communication time: 0.068314 seconds
+Rank 7 - Communication time: 0.186563 seconds
+Rank 8 - Communication time: 0.199013 seconds
+Rank 9 - Communication time: 0.152171 seconds
+Rank 10 - Communication time: 0.068197 seconds
+Rank 11 - Communication time: 0.239201 seconds
+Rank 12 - Communication time: 0.222777 seconds
+Rank 13 - Communication time: 0.068192 seconds
+Rank 14 - Communication time: 0.186478 seconds
+Rank 15 - Communication time: 0.176961 seconds
+Rank 16 - Communication time: 0.230582 seconds
+Rank 17 - Communication time: 0.237901 seconds
+Rank 18 - Communication time: 0.250357 seconds
+Execution time: 0.881508 seconds
+Rank 0 - Communication time: 0.232536 seconds
+Rank 19 - Communication time: 0.243926 seconds
+Finished running p2p_bloqueante with matrix size 1024 and 20 processes
+----------------------------------------
+
+----------------------------------------
+Running process type: p2p_bloqueante
+Matrix size: 1024
+Number of processes: 30
+Current time: 28-06-2025 04:00:07.00
+----------------------------------------
+10 total processes failed to start
+Error: Process p2p_bloqueante with matrix size 1024 and 30 processes failed with exit code 132
+----------------------------------------
+Running process type: p2p_bloqueante
+Matrix size: 1024
+Number of processes: 40
+Current time: 28-06-2025 04:02:18.02
+----------------------------------------
+20 total processes failed to start
+Error: Process p2p_bloqueante with matrix size 1024 and 40 processes failed with exit code 132
+----------------------------------------
+Running process type: p2p_bloqueante
+Matrix size: 2048
+Number of processes: 10
+Current time: 28-06-2025 04:04:30.04
+----------------------------------------
+Rank 1 - Communication time: 0.106756 seconds
+Rank 2 - Communication time: 0.398993 seconds
+Rank 3 - Communication time: 0.953925 seconds
+Rank 4 - Communication time: 0.106613 seconds
+Rank 5 - Communication time: 0.414974 seconds
+Rank 6 - Communication time: 0.796210 seconds
+Rank 7 - Communication time: 0.107007 seconds
+Rank 8 - Communication time: 0.106673 seconds
+Execution time: 24.910813 seconds
+Rank 0 - Communication time: 1.031781 seconds
+Rank 9 - Communication time: 1.158824 seconds
+Finished running p2p_bloqueante with matrix size 2048 and 10 processes
+----------------------------------------
+
+----------------------------------------
+Running process type: p2p_bloqueante
+Matrix size: 2048
+Number of processes: 20
+Current time: 28-06-2025 04:07:07.07
+----------------------------------------
+Rank 1 - Communication time: 0.189989 seconds
+Rank 2 - Communication time: 0.674639 seconds
+Rank 3 - Communication time: 0.571528 seconds
+Rank 4 - Communication time: 0.429958 seconds
+Rank 5 - Communication time: 0.545969 seconds
+Rank 6 - Communication time: 0.435966 seconds
+Rank 7 - Communication time: 0.572321 seconds
+Rank 8 - Communication time: 0.693373 seconds
+Rank 9 - Communication time: 0.425981 seconds
+Rank 10 - Communication time: 0.655067 seconds
+Rank 11 - Communication time: 0.500291 seconds
+Rank 12 - Communication time: 0.186588 seconds
+Rank 13 - Communication time: 0.588981 seconds
+Rank 14 - Communication time: 0.593922 seconds
+Rank 15 - Communication time: 0.414240 seconds
+Rank 16 - Communication time: 0.201141 seconds
+Rank 17 - Communication time: 0.457414 seconds
+Rank 18 - Communication time: 0.647165 seconds
+Rank 19 - Communication time: 0.677457 seconds
+Execution time: 13.790626 seconds
+Rank 0 - Communication time: 0.427924 seconds
+Finished running p2p_bloqueante with matrix size 2048 and 20 processes
+----------------------------------------
+
+----------------------------------------
+Running process type: p2p_bloqueante
+Matrix size: 2048
+Number of processes: 30
+Current time: 28-06-2025 04:09:35.09
+----------------------------------------
+10 total processes failed to start
+Error: Process p2p_bloqueante with matrix size 2048 and 30 processes failed with exit code 132
+----------------------------------------
+Running process type: p2p_bloqueante
+Matrix size: 2048
+Number of processes: 40
+Current time: 28-06-2025 04:11:46.11
+----------------------------------------
+20 total processes failed to start
+Error: Process p2p_bloqueante with matrix size 2048 and 40 processes failed with exit code 132
+----------------------------------------
+Running process type: p2p_bloqueante
+Matrix size: 4096
+Number of processes: 10
+Current time: 28-06-2025 04:13:57.13
+----------------------------------------
+Rank 1 - Communication time: 0.376912 seconds
+Rank 2 - Communication time: 4.280099 seconds
+Rank 3 - Communication time: 1.963740 seconds
+Rank 4 - Communication time: 1.963599 seconds
+Rank 5 - Communication time: 8.274395 seconds
+Rank 6 - Communication time: 0.889622 seconds
+Rank 7 - Communication time: 6.881586 seconds
+Rank 8 - Communication time: 5.579687 seconds
+Rank 9 - Communication time: 0.376213 seconds
+Execution time: 210.427998 seconds
+Rank 0 - Communication time: 7.055149 seconds
+Finished running p2p_bloqueante with matrix size 4096 and 10 processes
+----------------------------------------
+
+----------------------------------------
+Running process type: p2p_bloqueante
+Matrix size: 4096
+Number of processes: 20
+Current time: 28-06-2025 04:19:40.19
+----------------------------------------
+Rank 1 - Communication time: 0.486137 seconds
+Rank 2 - Communication time: 2.959743 seconds
+Rank 3 - Communication time: 0.617009 seconds
+Rank 4 - Communication time: 0.498431 seconds
+Rank 5 - Communication time: 15.023888 seconds
+Rank 6 - Communication time: 14.990794 seconds
+Rank 7 - Communication time: 16.086037 seconds
+Rank 8 - Communication time: 16.631397 seconds
+Rank 9 - Communication time: 16.372468 seconds
+Rank 10 - Communication time: 15.840650 seconds
+Rank 11 - Communication time: 16.747885 seconds
+Rank 12 - Communication time: 12.942463 seconds
+Rank 13 - Communication time: 15.317246 seconds
+Rank 14 - Communication time: 16.753919 seconds
+Rank 15 - Communication time: 0.507098 seconds
+Rank 16 - Communication time: 16.914288 seconds
+Rank 17 - Communication time: 15.823179 seconds
+Rank 18 - Communication time: 17.123565 seconds
+Rank 19 - Communication time: 8.357754 seconds
+Execution time: 124.079611 seconds
+Rank 0 - Communication time: 17.970857 seconds
+Finished running p2p_bloqueante with matrix size 4096 and 20 processes
+----------------------------------------
+
+----------------------------------------
+Running process type: p2p_bloqueante
+Matrix size: 4096
+Number of processes: 30
+Current time: 28-06-2025 04:23:59.23
+----------------------------------------
+10 total processes failed to start
+Error: Process p2p_bloqueante with matrix size 4096 and 30 processes failed with exit code 132
+----------------------------------------
+Running process type: p2p_bloqueante
+Matrix size: 4096
+Number of processes: 40
+Current time: 28-06-2025 04:26:10.26
+----------------------------------------
+20 total processes failed to start
+Error: Process p2p_bloqueante with matrix size 4096 and 40 processes failed with exit code 132
+----------------------------------------
+Running process type: p2p_naobloqueante
+Matrix size: 1024
+Number of processes: 10
+Current time: 28-06-2025 04:28:21.28
+----------------------------------------
+Rank 1 - Communication time: 0.106066 seconds
+Rank 2 - Communication time: 0.033076 seconds
+Rank 3 - Communication time: 0.124391 seconds
+Rank 4 - Communication time: 0.082387 seconds
+Rank 5 - Communication time: 0.120694 seconds
+Rank 6 - Communication time: 0.112147 seconds
+Rank 7 - Communication time: 0.109813 seconds
+Rank 8 - Communication time: 0.410012 seconds
+Execution time: 1.430956
+Rank 0 - Communication time: 0.087408 seconds
+Rank 9 - Communication time: 0.145262 seconds
+Finished running p2p_naobloqueante with matrix size 1024 and 10 processes
+----------------------------------------
+
+----------------------------------------
+Running process type: p2p_naobloqueante
+Matrix size: 1024
+Number of processes: 20
+Current time: 28-06-2025 04:30:35.30
+----------------------------------------
+Rank 1 - Communication time: 0.039785 seconds
+Rank 2 - Communication time: 0.094664 seconds
+Rank 3 - Communication time: 0.098435 seconds
+Rank 4 - Communication time: 0.092477 seconds
+Rank 5 - Communication time: 0.088230 seconds
+Rank 6 - Communication time: 0.088775 seconds
+Rank 7 - Communication time: 0.080872 seconds
+Rank 8 - Communication time: 0.046765 seconds
+Rank 9 - Communication time: 0.077456 seconds
+Rank 10 - Communication time: 0.097579 seconds
+Rank 11 - Communication time: 0.082062 seconds
+Rank 12 - Communication time: 0.095997 seconds
+Rank 13 - Communication time: 0.045138 seconds
+Rank 14 - Communication time: 0.053027 seconds
+Rank 15 - Communication time: 0.093664 seconds
+Rank 16 - Communication time: 0.099148 seconds
+Rank 17 - Communication time: 0.085083 seconds
+Rank 18 - Communication time: 0.086092 seconds
+Rank 19 - Communication time: 0.044486 seconds
+Execution time: 0.748671
+Rank 0 - Communication time: 0.028138 seconds
+Finished running p2p_naobloqueante with matrix size 1024 and 20 processes
+----------------------------------------
+
+----------------------------------------
+Running process type: p2p_naobloqueante
+Matrix size: 1024
+Number of processes: 30
+Current time: 28-06-2025 04:32:51.32
+----------------------------------------
+10 total processes failed to start
+Error: Process p2p_naobloqueante with matrix size 1024 and 30 processes failed with exit code 132
+----------------------------------------
+Running process type: p2p_naobloqueante
+Matrix size: 1024
+Number of processes: 40
+Current time: 28-06-2025 04:35:03.35
+----------------------------------------
+20 total processes failed to start
+Error: Process p2p_naobloqueante with matrix size 1024 and 40 processes failed with exit code 132
+----------------------------------------
+Running process type: p2p_naobloqueante
+Matrix size: 2048
+Number of processes: 10
+Current time: 28-06-2025 04:37:14.37
+----------------------------------------
+Rank 1 - Communication time: 0.096280 seconds
+Rank 2 - Communication time: 0.094822 seconds
+Rank 3 - Communication time: 0.139502 seconds
+Rank 4 - Communication time: 0.968305 seconds
+Rank 5 - Communication time: 0.850739 seconds
+Rank 6 - Communication time: 0.160666 seconds
+Rank 7 - Communication time: 0.110259 seconds
+Rank 8 - Communication time: 0.676571 seconds
+Rank 9 - Communication time: 0.583204 seconds
+Execution time: 25.553934
+Rank 0 - Communication time: 1.767696 seconds
+Finished running p2p_naobloqueante with matrix size 2048 and 10 processes
+----------------------------------------
+
+----------------------------------------
+Running process type: p2p_naobloqueante
+Matrix size: 2048
+Number of processes: 20
+Current time: 28-06-2025 04:39:52.39
+----------------------------------------
+Rank 1 - Communication time: 0.122907 seconds
+Rank 2 - Communication time: 0.123034 seconds
+Rank 3 - Communication time: 0.544184 seconds
+Rank 4 - Communication time: 0.545949 seconds
+Rank 5 - Communication time: 0.466287 seconds
+Rank 6 - Communication time: 0.129482 seconds
+Rank 7 - Communication time: 3.189793 seconds
+Rank 8 - Communication time: 3.729933 seconds
+Rank 9 - Communication time: 3.501474 seconds
+Rank 10 - Communication time: 3.688114 seconds
+Rank 11 - Communication time: 3.654064 seconds
+Rank 12 - Communication time: 3.171872 seconds
+Rank 13 - Communication time: 3.330977 seconds
+Rank 14 - Communication time: 3.635447 seconds
+Rank 15 - Communication time: 3.039952 seconds
+Rank 16 - Communication time: 2.802432 seconds
+Rank 17 - Communication time: 3.003512 seconds
+Rank 18 - Communication time: 3.470464 seconds
+Rank 19 - Communication time: 3.228552 seconds
+Execution time: 16.536226
+Rank 0 - Communication time: 3.253564 seconds
+Finished running p2p_naobloqueante with matrix size 2048 and 20 processes
+----------------------------------------
+
+----------------------------------------
+Running process type: p2p_naobloqueante
+Matrix size: 2048
+Number of processes: 30
+Current time: 28-06-2025 04:42:24.42
+----------------------------------------
+10 total processes failed to start
+Error: Process p2p_naobloqueante with matrix size 2048 and 30 processes failed with exit code 132
+----------------------------------------
+Running process type: p2p_naobloqueante
+Matrix size: 2048
+Number of processes: 40
+Current time: 28-06-2025 04:44:36.44
+----------------------------------------
+20 total processes failed to start
+Error: Process p2p_naobloqueante with matrix size 2048 and 40 processes failed with exit code 132
+----------------------------------------
+Running process type: p2p_naobloqueante
+Matrix size: 4096
+Number of processes: 10
+Current time: 28-06-2025 04:46:47.46
+----------------------------------------
+Rank 1 - Communication time: 71.139415 seconds
+Rank 2 - Communication time: 70.617619 seconds
+Rank 3 - Communication time: 70.237212 seconds
+Rank 4 - Communication time: 71.422310 seconds
+Rank 5 - Communication time: 84.356384 seconds
+Rank 6 - Communication time: 82.131681 seconds
+Rank 7 - Communication time: 70.165511 seconds
+Rank 8 - Communication time: 81.905972 seconds
+Execution time: 284.839195
+Rank 0 - Communication time: 0.161990 seconds
+Rank 9 - Communication time: 80.473195 seconds
+Finished running p2p_naobloqueante with matrix size 4096 and 10 processes
+----------------------------------------
+
+----------------------------------------
+Running process type: p2p_naobloqueante
+Matrix size: 4096
+Number of processes: 20
+Current time: 28-06-2025 04:53:45.53
+----------------------------------------
+Rank 1 - Communication time: 5.825900 seconds
+Rank 2 - Communication time: 6.938326 seconds
+Rank 3 - Communication time: 6.866165 seconds
+Rank 4 - Communication time: 6.888451 seconds
+Rank 5 - Communication time: 0.427420 seconds
+Rank 6 - Communication time: 1.385132 seconds
+Rank 7 - Communication time: 8.047467 seconds
+Rank 8 - Communication time: 7.745630 seconds
+Rank 9 - Communication time: 1.603240 seconds
+Rank 10 - Communication time: 7.813215 seconds
+Rank 11 - Communication time: 1.348554 seconds
+Rank 12 - Communication time: 2.109900 seconds
+Rank 13 - Communication time: 1.250448 seconds
+Rank 14 - Communication time: 8.205358 seconds
+Rank 15 - Communication time: 8.126439 seconds
+Rank 16 - Communication time: 1.130249 seconds
+Rank 17 - Communication time: 2.031676 seconds
+Rank 18 - Communication time: 6.970693 seconds
+Rank 19 - Communication time: 0.892706 seconds
+Execution time: 112.513443
+Rank 0 - Communication time: 1.838117 seconds
+Finished running p2p_naobloqueante with matrix size 4096 and 20 processes
+----------------------------------------
+
+----------------------------------------
+Running process type: p2p_naobloqueante
+Matrix size: 4096
+Number of processes: 30
+Current time: 28-06-2025 04:57:51.57
+----------------------------------------
+10 total processes failed to start
+Error: Process p2p_naobloqueante with matrix size 4096 and 30 processes failed with exit code 132
+----------------------------------------
+Running process type: p2p_naobloqueante
+Matrix size: 4096
+Number of processes: 40
+Current time: 28-06-2025 05:00:04.00
+----------------------------------------
+20 total processes failed to start
+Error: Process p2p_naobloqueante with matrix size 4096 and 40 processes failed with exit code 132
+All processes completed.
+Time elapsed: 6011.404915994 seconds

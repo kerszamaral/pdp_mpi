@@ -1,0 +1,45 @@
+rm -rf mpi_coletiva mpi_p2p_bloqueante mpi_p2p_naobloqueante
+mpicc mpi_coletiva.c -o mpi_coletiva
+mpicc mpi_p2p_bloqueante.c -o mpi_p2p_bloqueante
+mpicc mpi_p2p_naobloqueante.c -o mpi_p2p_naobloqueante
+Running MPI processes with the following configurations:
+----------------------------------------
+MACHINEFILE: nodes.713520
+MATRIX_SIZES: 1024 2048 4096
+NUM_PROCS: 10 20 30 40
+PROCESS_TYPES: coletiva p2p_bloqueante p2p_naobloqueante
+----------------------------------------
+
+Rank 7 - Communication time: 0.044464 seconds
+Rank 1 - Communication time: 0.023505 seconds
+Rank 9 - Communication time: 0.024537 seconds
+Rank 5 - Communication time: 0.029893 seconds
+Rank 6 - Communication time: 0.087421 seconds
+Rank 3 - Communication time: 0.022861 seconds
+Rank 2 - Communication time: 0.061294 seconds
+Rank 4 - Communication time: 0.045030 seconds
+Execution time: 1.367746
+Rank 0 - Communication time: 0.088615 seconds
+Rank 8 - Communication time: 0.057190 seconds
+Rank 5 - Communication time: 0.046644 seconds
+Rank 7 - Communication time: 0.047221 seconds
+Rank 6 - Communication time: 0.076331 seconds
+Rank 13 - Communication time: 0.088018 seconds
+Rank 19 - Communication time: 0.044831 seconds
+Rank 9 - Communication time: 0.045741 seconds
+Rank 3 - Communication time: 0.047737 seconds
+Rank 11 - Communication time: 0.186824 seconds
+Rank 10 - Communication time: 0.046540 seconds
+Rank 15 - Communication time: 0.046937 seconds
+Rank 14 - Communication time: 0.144214 seconds
+Rank 17 - Communication time: 0.360348 seconds
+Rank 18 - Communication time: 0.388795 seconds
+Rank 12 - Communication time: 0.359992 seconds
+Rank 1 - Communication time: 0.046789 seconds
+Rank 2 - Communication time: 0.081498 seconds
+Rank 4 - Communication time: 0.422361 seconds
+Rank 8 - Communication time: 0.404244 seconds
+Execution time: 1.049808
+Rank 0 - Communication time: 0.382958 seconds
+Rank 16 - Communication time: 0.065817 seconds
+10 total processes failed to start

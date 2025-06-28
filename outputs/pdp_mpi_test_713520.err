@@ -1,0 +1,56 @@
+Cloning into './pdp_mpi'...
+20: slurmstepd: error: couldn't chdir to `/scratch/afely/pdp_mpi': No such file or directory: going to /tmp instead
+20: slurmstepd: error: couldn't chdir to `/scratch/afely/pdp_mpi': No such file or directory: going to /tmp instead
+20: slurmstepd: error: couldn't chdir to `/scratch/afely/pdp_mpi': No such file or directory: going to /tmp instead
+20: slurmstepd: error: couldn't chdir to `/scratch/afely/pdp_mpi': No such file or directory: going to /tmp instead
+20: slurmstepd: error: couldn't chdir to `/scratch/afely/pdp_mpi': No such file or directory: going to /tmp instead
+20: slurmstepd: error: couldn't chdir to `/scratch/afely/pdp_mpi': No such file or directory: going to /tmp instead
+20: slurmstepd: error: couldn't chdir to `/scratch/afely/pdp_mpi': No such file or directory: going to /tmp instead
+20: slurmstepd: error: couldn't chdir to `/scratch/afely/pdp_mpi': No such file or directory: going to /tmp instead
+20: slurmstepd: error: couldn't chdir to `/scratch/afely/pdp_mpi': No such file or directory: going to /tmp instead
+20: slurmstepd: error: couldn't chdir to `/scratch/afely/pdp_mpi': No such file or directory: going to /tmp instead
+20: slurmstepd: error: couldn't chdir to `/scratch/afely/pdp_mpi': No such file or directory: going to /tmp instead
+20: slurmstepd: error: couldn't chdir to `/scratch/afely/pdp_mpi': No such file or directory: going to /tmp instead
+20: slurmstepd: error: couldn't chdir to `/scratch/afely/pdp_mpi': No such file or directory: going to /tmp instead
+20: slurmstepd: error: couldn't chdir to `/scratch/afely/pdp_mpi': No such file or directory: going to /tmp instead
+20: slurmstepd: error: couldn't chdir to `/scratch/afely/pdp_mpi': No such file or directory: going to /tmp instead
+20: slurmstepd: error: couldn't chdir to `/scratch/afely/pdp_mpi': No such file or directory: going to /tmp instead
+20: slurmstepd: error: couldn't chdir to `/scratch/afely/pdp_mpi': No such file or directory: going to /tmp instead
+20: slurmstepd: error: couldn't chdir to `/scratch/afely/pdp_mpi': No such file or directory: going to /tmp instead
+20: slurmstepd: error: couldn't chdir to `/scratch/afely/pdp_mpi': No such file or directory: going to /tmp instead
+20: slurmstepd: error: couldn't chdir to `/scratch/afely/pdp_mpi': No such file or directory: going to /tmp instead
+20: slurmstepd: error: couldn't chdir to `/scratch/afely/pdp_mpi': No such file or directory: going to /tmp instead
+----------------------------------------
+Running process type: coletiva
+Matrix size: 1024
+Number of processes: 10
+Current time: 27-06-2025 21:53:00.53
+----------------------------------------
+Finished running coletiva with matrix size 1024 and 10 processes
+----------------------------------------
+
+----------------------------------------
+Running process type: coletiva
+Matrix size: 1024
+Number of processes: 20
+Current time: 27-06-2025 21:55:16.55
+----------------------------------------
+Finished running coletiva with matrix size 1024 and 20 processes
+----------------------------------------
+
+----------------------------------------
+Running process type: coletiva
+Matrix size: 1024
+Number of processes: 30
+Current time: 27-06-2025 21:57:32.57
+----------------------------------------
+--------------------------------------------------------------------------
+mpirun was unable to launch the specified application as it could not access
+or execute an executable:
+
+Executable: ./mpi_coletiva
+Node: hype5
+
+while attempting to start process rank 20.
+--------------------------------------------------------------------------
+Error: Process coletiva with matrix size 1024 and 30 processes failed with exit code 132
