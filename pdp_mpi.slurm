@@ -7,6 +7,10 @@
 #SBATCH --output=%x_%j.out
 #SBATCH --error=%x_%j.err
 
+export PRTE_MCA_ras_slurm_use_entire_allocation=1
+export PRTE_MCA_ras_base_launch_orted_on_hn=1
+# export OMPI_MCA_pml="ucx"
+
 cd $SCRATCH
 rm -rf pdp_mpi
 git clone --depth 1 https://github.com/kerszamaral/pdp_mpi.git ./pdp_mpi

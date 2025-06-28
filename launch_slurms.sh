@@ -1,5 +1,9 @@
 #!/bin/bash
 
+export PRTE_MCA_ras_slurm_use_entire_allocation=1
+export PRTE_MCA_ras_base_launch_orted_on_hn=1
+# export OMPI_MCA_pml="ucx"
+
 JOBS_DIR="pdp_mpi_jobs"
 rm -rf $JOBS_DIR
 mkdir -p $JOBS_DIR
