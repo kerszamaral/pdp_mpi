@@ -44,3 +44,4 @@ pdp_mpi_parsed/
 .venv/
 __pycache__/
 *.pyc
+*.json
