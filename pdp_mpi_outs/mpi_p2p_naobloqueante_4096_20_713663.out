@@ -1,0 +1,32 @@
+# ----------------------------------------
+# job id: 713663
+# job name: mpi_p2p_naobloqueante_4096_20
+# Running process type: p2p_naobloqueante
+# Matrix size: 4096
+# Number of processes: 20
+# Current time: 28-06-2025 20:26:53.26
+# ----------------------------------------
+Rank 1 - Communication time: 1.637946 seconds
+Rank 2 - Communication time: 1.243835 seconds
+Rank 3 - Communication time: 6.003293 seconds
+Rank 4 - Communication time: 6.219833 seconds
+Rank 5 - Communication time: 6.610873 seconds
+Rank 6 - Communication time: 6.826508 seconds
+Rank 7 - Communication time: 0.541407 seconds
+Rank 8 - Communication time: 5.985551 seconds
+Rank 9 - Communication time: 0.405139 seconds
+Rank 10 - Communication time: 7.053885 seconds
+Rank 11 - Communication time: 7.508698 seconds
+Rank 12 - Communication time: 1.993417 seconds
+Rank 13 - Communication time: 0.827761 seconds
+Rank 14 - Communication time: 7.370041 seconds
+Rank 15 - Communication time: 5.676943 seconds
+Rank 16 - Communication time: 1.558260 seconds
+Rank 17 - Communication time: 1.330717 seconds
+Rank 18 - Communication time: 6.735640 seconds
+Execution time: 107.468598
+Rank 0 - Communication time: 0.298374 seconds
+Rank 19 - Communication time: 2.133807 seconds
+# ----------------------------------------
+# Finished running p2p_naobloqueante with matrix size 4096 and 20 processes after  seconds
+# ----------------------------------------

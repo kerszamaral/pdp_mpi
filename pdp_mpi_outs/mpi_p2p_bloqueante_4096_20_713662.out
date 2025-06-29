@@ -1,0 +1,32 @@
+# ----------------------------------------
+# job id: 713662
+# job name: mpi_p2p_bloqueante_4096_20
+# Running process type: p2p_bloqueante
+# Matrix size: 4096
+# Number of processes: 20
+# Current time: 28-06-2025 20:22:12.22
+# ----------------------------------------
+Rank 1 - Communication time: 0.714955 seconds
+Rank 2 - Communication time: 28.980102 seconds
+Rank 3 - Communication time: 26.086109 seconds
+Rank 4 - Communication time: 25.734617 seconds
+Rank 5 - Communication time: 28.352938 seconds
+Rank 6 - Communication time: 26.549330 seconds
+Rank 7 - Communication time: 27.454933 seconds
+Rank 8 - Communication time: 7.891965 seconds
+Rank 9 - Communication time: 27.472376 seconds
+Rank 10 - Communication time: 0.715663 seconds
+Rank 11 - Communication time: 32.472148 seconds
+Rank 12 - Communication time: 33.678700 seconds
+Rank 13 - Communication time: 33.547445 seconds
+Rank 14 - Communication time: 32.857187 seconds
+Rank 15 - Communication time: 32.720976 seconds
+Rank 16 - Communication time: 0.846314 seconds
+Rank 17 - Communication time: 0.689585 seconds
+Rank 18 - Communication time: 43.901720 seconds
+Execution time: 144.899956 seconds
+Rank 0 - Communication time: 38.561494 seconds
+Rank 19 - Communication time: 44.249236 seconds
+# ----------------------------------------
+# Finished running p2p_bloqueante with matrix size 4096 and 20 processes after  seconds
+# ----------------------------------------

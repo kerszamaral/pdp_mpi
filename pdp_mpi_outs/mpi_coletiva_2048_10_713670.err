@@ -1,0 +1,24 @@
+# ----------------------------------------
+# job id: 713670
+# job name: mpi_coletiva_2048_10
+# Running process type: coletiva
+# Matrix size: 2048
+# Number of processes: 10
+# Current time: 28-06-2025 16:18:44.18
+# ----------------------------------------
+--------------------------------------------------------------------------
+Open MPI failed an OFI Libfabric library call (fi_domain).  This is highly
+unusual; your job may behave unpredictably (and/or abort) after this.
+
+  Local host: hype1
+  Location: ../../../../../../ompi/mca/mtl/ofi/mtl_ofi_component.c:939
+  Error: No data available (61)
+--------------------------------------------------------------------------
+[hype1:454484] 9 more processes have sent help message help-mtl-ofi.txt / OFI call fail
+[hype1:454484] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+(standard_in) 1: syntax error
+(standard_in) 1: illegal character: :
+(standard_in) 1: illegal character: :
+# ----------------------------------------
+# Finished running coletiva with matrix size 2048 and 10 processes after  seconds
+# ----------------------------------------

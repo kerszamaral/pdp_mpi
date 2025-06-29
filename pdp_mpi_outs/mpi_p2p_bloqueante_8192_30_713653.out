@@ -1,0 +1,42 @@
+# ----------------------------------------
+# job id: 713653
+# job name: mpi_p2p_bloqueante_8192_30
+# Running process type: p2p_bloqueante
+# Matrix size: 8192
+# Number of processes: 30
+# Current time: 28-06-2025 22:26:17.26
+# ----------------------------------------
+Rank 1 - Communication time: 2.277389 seconds
+Rank 2 - Communication time: 184.428590 seconds
+Rank 3 - Communication time: 195.726983 seconds
+Rank 4 - Communication time: 181.768870 seconds
+Rank 5 - Communication time: 2.244632 seconds
+Rank 6 - Communication time: 187.099281 seconds
+Rank 7 - Communication time: 4.335831 seconds
+Rank 8 - Communication time: 199.911751 seconds
+Rank 9 - Communication time: 191.393034 seconds
+Rank 10 - Communication time: 184.269135 seconds
+Rank 11 - Communication time: 204.369140 seconds
+Rank 12 - Communication time: 205.341953 seconds
+Rank 13 - Communication time: 197.315456 seconds
+Rank 14 - Communication time: 195.209374 seconds
+Rank 15 - Communication time: 2.375073 seconds
+Rank 16 - Communication time: 186.820064 seconds
+Rank 17 - Communication time: 201.928710 seconds
+Rank 18 - Communication time: 190.853875 seconds
+Rank 19 - Communication time: 186.982878 seconds
+Rank 20 - Communication time: 202.678577 seconds
+Rank 21 - Communication time: 207.641660 seconds
+Rank 22 - Communication time: 197.306690 seconds
+Rank 23 - Communication time: 203.678394 seconds
+Rank 24 - Communication time: 189.723530 seconds
+Rank 25 - Communication time: 203.017825 seconds
+Rank 26 - Communication time: 199.306890 seconds
+Rank 27 - Communication time: 2.288021 seconds
+Rank 28 - Communication time: 198.268428 seconds
+Execution time: 758.206760 seconds
+Rank 0 - Communication time: 217.165005 seconds
+Rank 29 - Communication time: 214.114643 seconds
+# ----------------------------------------
+# Finished running p2p_bloqueante with matrix size 8192 and 30 processes after  seconds
+# ----------------------------------------

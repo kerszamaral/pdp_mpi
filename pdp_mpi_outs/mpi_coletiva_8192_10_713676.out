@@ -1,0 +1,22 @@
+# ----------------------------------------
+# job id: 713676
+# job name: mpi_coletiva_8192_10
+# Running process type: coletiva
+# Matrix size: 8192
+# Number of processes: 10
+# Current time: 28-06-2025 17:50:26.50
+# ----------------------------------------
+Rank 3 - Communication time: 120.317622 seconds
+Rank 1 - Communication time: 1.389306 seconds
+Rank 2 - Communication time: 2.579684 seconds
+Rank 7 - Communication time: 19.294249 seconds
+Rank 9 - Communication time: 13.880299 seconds
+Rank 5 - Communication time: 1.486388 seconds
+Rank 6 - Communication time: 25.029092 seconds
+Rank 4 - Communication time: 141.260239 seconds
+Execution time: 1666.995037
+Rank 0 - Communication time: 31.894157 seconds
+Rank 8 - Communication time: 22.959244 seconds
+# ----------------------------------------
+# Finished running coletiva with matrix size 8192 and 10 processes after  seconds
+# ----------------------------------------

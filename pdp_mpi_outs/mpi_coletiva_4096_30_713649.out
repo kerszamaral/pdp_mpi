@@ -1,0 +1,42 @@
+# ----------------------------------------
+# job id: 713649
+# job name: mpi_coletiva_4096_30
+# Running process type: coletiva
+# Matrix size: 4096
+# Number of processes: 30
+# Current time: 28-06-2025 22:08:38.08
+# ----------------------------------------
+Rank 25 - Communication time: 1.166025 seconds
+Rank 21 - Communication time: 0.609912 seconds
+Rank 19 - Communication time: 0.553680 seconds
+Rank 23 - Communication time: 0.558337 seconds
+Rank 22 - Communication time: 0.756686 seconds
+Rank 27 - Communication time: 0.676377 seconds
+Rank 26 - Communication time: 0.564543 seconds
+Rank 29 - Communication time: 0.557011 seconds
+Rank 28 - Communication time: 4.367332 seconds
+Rank 3 - Communication time: 0.827455 seconds
+Rank 17 - Communication time: 1.926924 seconds
+Rank 18 - Communication time: 5.269767 seconds
+Rank 20 - Communication time: 4.773151 seconds
+Rank 24 - Communication time: 4.887759 seconds
+Rank 11 - Communication time: 1.234370 seconds
+Rank 9 - Communication time: 0.557716 seconds
+Rank 10 - Communication time: 0.664501 seconds
+Rank 5 - Communication time: 0.778470 seconds
+Rank 1 - Communication time: 1.663346 seconds
+Rank 2 - Communication time: 1.620710 seconds
+Rank 15 - Communication time: 4.566151 seconds
+Rank 7 - Communication time: 0.587885 seconds
+Rank 6 - Communication time: 22.491652 seconds
+Rank 4 - Communication time: 22.996012 seconds
+Rank 13 - Communication time: 23.523449 seconds
+Rank 14 - Communication time: 22.995886 seconds
+Rank 12 - Communication time: 0.572584 seconds
+Rank 8 - Communication time: 24.770255 seconds
+Execution time: 98.903545
+Rank 0 - Communication time: 23.039272 seconds
+Rank 16 - Communication time: 23.757401 seconds
+# ----------------------------------------
+# Finished running coletiva with matrix size 4096 and 30 processes after  seconds
+# ----------------------------------------

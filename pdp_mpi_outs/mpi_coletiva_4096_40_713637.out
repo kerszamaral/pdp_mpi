@@ -1,0 +1,52 @@
+# ----------------------------------------
+# job id: 713637
+# job name: mpi_coletiva_4096_40
+# Running process type: coletiva
+# Matrix size: 4096
+# Number of processes: 40
+# Current time: 28-06-2025 22:52:03.52
+# ----------------------------------------
+Rank 23 - Communication time: 0.777766 seconds
+Rank 33 - Communication time: 0.527168 seconds
+Rank 39 - Communication time: 0.596110 seconds
+Rank 29 - Communication time: 0.666868 seconds
+Rank 37 - Communication time: 0.595226 seconds
+Rank 38 - Communication time: 0.936624 seconds
+Rank 35 - Communication time: 0.812962 seconds
+Rank 34 - Communication time: 0.533341 seconds
+Rank 36 - Communication time: 0.845113 seconds
+Rank 27 - Communication time: 1.085969 seconds
+Rank 3 - Communication time: 0.863253 seconds
+Rank 11 - Communication time: 0.592499 seconds
+Rank 31 - Communication time: 0.846984 seconds
+Rank 30 - Communication time: 0.662611 seconds
+Rank 25 - Communication time: 0.660490 seconds
+Rank 26 - Communication time: 1.006056 seconds
+Rank 28 - Communication time: 1.349926 seconds
+Rank 21 - Communication time: 1.235247 seconds
+Rank 22 - Communication time: 1.562894 seconds
+Rank 5 - Communication time: 0.577499 seconds
+Rank 15 - Communication time: 0.881188 seconds
+Rank 17 - Communication time: 3.744255 seconds
+Rank 7 - Communication time: 2.469455 seconds
+Rank 6 - Communication time: 0.582209 seconds
+Rank 19 - Communication time: 1.145791 seconds
+Rank 18 - Communication time: 0.618492 seconds
+Rank 20 - Communication time: 2.817557 seconds
+Rank 24 - Communication time: 3.440711 seconds
+Rank 13 - Communication time: 3.779728 seconds
+Rank 14 - Communication time: 1.074494 seconds
+Rank 1 - Communication time: 0.494373 seconds
+Rank 2 - Communication time: 3.285801 seconds
+Rank 4 - Communication time: 3.910052 seconds
+Rank 9 - Communication time: 4.367740 seconds
+Rank 10 - Communication time: 3.523551 seconds
+Rank 12 - Communication time: 0.860783 seconds
+Rank 8 - Communication time: 0.610657 seconds
+Rank 16 - Communication time: 1.255321 seconds
+Execution time: 55.860256
+Rank 0 - Communication time: 0.911195 seconds
+Rank 32 - Communication time: 4.170666 seconds
+# ----------------------------------------
+# Finished running coletiva with matrix size 4096 and 40 processes after  seconds
+# ----------------------------------------

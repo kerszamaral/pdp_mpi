@@ -1,0 +1,92 @@
+# ----------------------------------------
+# job id: 713693
+# job name: mpi_p2p_bloqueante_4096_80
+# Running process type: p2p_bloqueante
+# Matrix size: 4096
+# Number of processes: 80
+# Current time: 28-06-2025 23:20:48.20
+# ----------------------------------------
+Rank 1 - Communication time: 3.132580 seconds
+Rank 2 - Communication time: 3.568709 seconds
+Rank 3 - Communication time: 1.744860 seconds
+Rank 4 - Communication time: 3.814169 seconds
+Rank 5 - Communication time: 1.796773 seconds
+Rank 6 - Communication time: 3.213536 seconds
+Rank 7 - Communication time: 3.365694 seconds
+Rank 8 - Communication time: 1.629435 seconds
+Rank 9 - Communication time: 1.616623 seconds
+Rank 10 - Communication time: 3.981174 seconds
+Rank 11 - Communication time: 4.232244 seconds
+Rank 12 - Communication time: 4.205768 seconds
+Rank 13 - Communication time: 1.953681 seconds
+Rank 14 - Communication time: 3.770487 seconds
+Rank 15 - Communication time: 3.699277 seconds
+Rank 16 - Communication time: 3.958365 seconds
+Rank 17 - Communication time: 2.213737 seconds
+Rank 18 - Communication time: 2.003728 seconds
+Rank 19 - Communication time: 2.058524 seconds
+Rank 20 - Communication time: 1.926091 seconds
+Rank 21 - Communication time: 3.719328 seconds
+Rank 22 - Communication time: 3.907814 seconds
+Rank 23 - Communication time: 2.019866 seconds
+Rank 24 - Communication time: 2.216202 seconds
+Rank 25 - Communication time: 3.950497 seconds
+Rank 26 - Communication time: 4.272325 seconds
+Rank 27 - Communication time: 1.794625 seconds
+Rank 28 - Communication time: 3.916006 seconds
+Rank 29 - Communication time: 2.167533 seconds
+Rank 30 - Communication time: 3.966714 seconds
+Rank 31 - Communication time: 1.962266 seconds
+Rank 32 - Communication time: 2.149468 seconds
+Rank 33 - Communication time: 3.844461 seconds
+Rank 34 - Communication time: 2.009450 seconds
+Rank 35 - Communication time: 1.881964 seconds
+Rank 36 - Communication time: 4.275549 seconds
+Rank 37 - Communication time: 2.080369 seconds
+Rank 38 - Communication time: 3.755654 seconds
+Rank 39 - Communication time: 1.927226 seconds
+Rank 40 - Communication time: 1.995829 seconds
+Rank 41 - Communication time: 2.344388 seconds
+Rank 42 - Communication time: 1.770670 seconds
+Rank 43 - Communication time: 2.082647 seconds
+Rank 44 - Communication time: 2.920682 seconds
+Rank 45 - Communication time: 2.546444 seconds
+Rank 46 - Communication time: 2.739603 seconds
+Rank 47 - Communication time: 2.314535 seconds
+Rank 48 - Communication time: 2.697376 seconds
+Rank 49 - Communication time: 2.479445 seconds
+Rank 50 - Communication time: 2.706649 seconds
+Rank 51 - Communication time: 2.309379 seconds
+Rank 52 - Communication time: 1.878963 seconds
+Rank 53 - Communication time: 2.814694 seconds
+Rank 54 - Communication time: 2.512121 seconds
+Rank 55 - Communication time: 2.627175 seconds
+Rank 56 - Communication time: 2.870015 seconds
+Rank 57 - Communication time: 2.448165 seconds
+Rank 58 - Communication time: 2.045275 seconds
+Rank 59 - Communication time: 2.226583 seconds
+Rank 60 - Communication time: 2.955741 seconds
+Rank 61 - Communication time: 2.042593 seconds
+Rank 62 - Communication time: 2.721937 seconds
+Rank 63 - Communication time: 2.120723 seconds
+Rank 64 - Communication time: 2.658018 seconds
+Rank 65 - Communication time: 2.217110 seconds
+Rank 66 - Communication time: 1.969474 seconds
+Rank 67 - Communication time: 1.733922 seconds
+Rank 68 - Communication time: 2.691859 seconds
+Rank 69 - Communication time: 1.779805 seconds
+Rank 70 - Communication time: 2.169358 seconds
+Rank 71 - Communication time: 2.235421 seconds
+Rank 72 - Communication time: 2.613933 seconds
+Rank 73 - Communication time: 2.177079 seconds
+Rank 74 - Communication time: 2.087034 seconds
+Rank 75 - Communication time: 2.050050 seconds
+Rank 76 - Communication time: 2.194837 seconds
+Rank 77 - Communication time: 2.126688 seconds
+Rank 78 - Communication time: 2.051293 seconds
+Execution time: 54.805445 seconds
+Rank 0 - Communication time: 1.917540 seconds
+Rank 79 - Communication time: 2.023012 seconds
+# ----------------------------------------
+# Finished running p2p_bloqueante with matrix size 4096 and 80 processes after  seconds
+# ----------------------------------------

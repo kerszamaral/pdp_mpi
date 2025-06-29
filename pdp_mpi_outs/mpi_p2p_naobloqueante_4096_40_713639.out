@@ -1,0 +1,52 @@
+# ----------------------------------------
+# job id: 713639
+# job name: mpi_p2p_naobloqueante_4096_40
+# Running process type: p2p_naobloqueante
+# Matrix size: 4096
+# Number of processes: 40
+# Current time: 28-06-2025 22:55:15.55
+# ----------------------------------------
+Rank 1 - Communication time: 0.740063 seconds
+Rank 2 - Communication time: 0.681086 seconds
+Rank 3 - Communication time: 1.071196 seconds
+Rank 4 - Communication time: 0.506606 seconds
+Rank 5 - Communication time: 0.961568 seconds
+Rank 6 - Communication time: 3.793009 seconds
+Rank 7 - Communication time: 1.152398 seconds
+Rank 8 - Communication time: 3.892239 seconds
+Rank 9 - Communication time: 1.091966 seconds
+Rank 10 - Communication time: 1.366640 seconds
+Rank 11 - Communication time: 3.395534 seconds
+Rank 12 - Communication time: 0.631859 seconds
+Rank 13 - Communication time: 1.277959 seconds
+Rank 14 - Communication time: 3.640271 seconds
+Rank 15 - Communication time: 1.439016 seconds
+Rank 16 - Communication time: 3.031520 seconds
+Rank 17 - Communication time: 1.092745 seconds
+Rank 18 - Communication time: 0.925792 seconds
+Rank 19 - Communication time: 3.385418 seconds
+Rank 20 - Communication time: 0.715416 seconds
+Rank 21 - Communication time: 4.781436 seconds
+Rank 22 - Communication time: 0.608506 seconds
+Rank 23 - Communication time: 0.654580 seconds
+Rank 24 - Communication time: 5.098935 seconds
+Rank 25 - Communication time: 1.378982 seconds
+Rank 26 - Communication time: 4.997412 seconds
+Rank 27 - Communication time: 5.271619 seconds
+Rank 28 - Communication time: 1.355800 seconds
+Rank 29 - Communication time: 0.792369 seconds
+Rank 30 - Communication time: 4.723009 seconds
+Rank 31 - Communication time: 4.800367 seconds
+Rank 32 - Communication time: 0.389376 seconds
+Rank 33 - Communication time: 0.502542 seconds
+Rank 34 - Communication time: 11.221344 seconds
+Rank 35 - Communication time: 10.844214 seconds
+Rank 36 - Communication time: 15.755298 seconds
+Rank 37 - Communication time: 15.002058 seconds
+Rank 38 - Communication time: 11.455203 seconds
+Execution time: 67.249383
+Rank 0 - Communication time: 13.645671 seconds
+Rank 39 - Communication time: 14.917706 seconds
+# ----------------------------------------
+# Finished running p2p_naobloqueante with matrix size 4096 and 40 processes after  seconds
+# ----------------------------------------

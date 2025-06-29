@@ -1,0 +1,22 @@
+# ----------------------------------------
+# job id: 713667
+# job name: mpi_coletiva_1024_10
+# Running process type: coletiva
+# Matrix size: 1024
+# Number of processes: 10
+# Current time: 28-06-2025 16:11:49.11
+# ----------------------------------------
+Rank 7 - Communication time: 0.076864 seconds
+Rank 9 - Communication time: 0.077411 seconds
+Rank 3 - Communication time: 0.076999 seconds
+Rank 1 - Communication time: 0.085536 seconds
+Rank 2 - Communication time: 0.314262 seconds
+Rank 5 - Communication time: 0.114183 seconds
+Rank 6 - Communication time: 0.305942 seconds
+Rank 4 - Communication time: 0.234604 seconds
+Execution time: 1.167982
+Rank 0 - Communication time: 0.070462 seconds
+Rank 8 - Communication time: 0.266972 seconds
+# ----------------------------------------
+# Finished running coletiva with matrix size 1024 and 10 processes after  seconds
+# ----------------------------------------

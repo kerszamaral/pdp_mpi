@@ -1,0 +1,92 @@
+# ----------------------------------------
+# job id: 713686
+# job name: mpi_coletiva_1024_80
+# Running process type: coletiva
+# Matrix size: 1024
+# Number of processes: 80
+# Current time: 28-06-2025 23:08:17.08
+# ----------------------------------------
+Rank 1 - Communication time: 0.362163 seconds
+Rank 51 - Communication time: 0.366225 seconds
+Rank 5 - Communication time: 0.368837 seconds
+Rank 53 - Communication time: 0.374023 seconds
+Rank 15 - Communication time: 0.366452 seconds
+Rank 13 - Communication time: 0.368955 seconds
+Rank 57 - Communication time: 0.374299 seconds
+Rank 50 - Communication time: 0.366824 seconds
+Rank 67 - Communication time: 0.366228 seconds
+Rank 19 - Communication time: 0.370922 seconds
+Rank 65 - Communication time: 0.366844 seconds
+Rank 66 - Communication time: 0.378984 seconds
+Rank 49 - Communication time: 0.366505 seconds
+Rank 18 - Communication time: 0.371002 seconds
+Rank 75 - Communication time: 0.372798 seconds
+Rank 61 - Communication time: 0.371242 seconds
+Rank 71 - Communication time: 0.374007 seconds
+Rank 77 - Communication time: 0.372149 seconds
+Rank 69 - Communication time: 0.373022 seconds
+Rank 3 - Communication time: 0.363484 seconds
+Rank 70 - Communication time: 0.375958 seconds
+Rank 2 - Communication time: 0.378882 seconds
+Rank 25 - Communication time: 0.378015 seconds
+Rank 68 - Communication time: 0.376428 seconds
+Rank 17 - Communication time: 0.369179 seconds
+Rank 73 - Communication time: 0.371979 seconds
+Rank 39 - Communication time: 0.375495 seconds
+Rank 38 - Communication time: 0.375895 seconds
+Rank 59 - Communication time: 0.374282 seconds
+Rank 21 - Communication time: 0.376824 seconds
+Rank 23 - Communication time: 0.377255 seconds
+Rank 7 - Communication time: 0.368991 seconds
+Rank 22 - Communication time: 0.381396 seconds
+Rank 63 - Communication time: 0.373602 seconds
+Rank 6 - Communication time: 0.374599 seconds
+Rank 62 - Communication time: 0.373339 seconds
+Rank 74 - Communication time: 0.374284 seconds
+Rank 4 - Communication time: 0.382993 seconds
+Rank 14 - Communication time: 0.370438 seconds
+Rank 79 - Communication time: 0.373084 seconds
+Rank 11 - Communication time: 0.369930 seconds
+Rank 10 - Communication time: 0.374159 seconds
+Rank 29 - Communication time: 0.375429 seconds
+Rank 20 - Communication time: 0.377510 seconds
+Rank 78 - Communication time: 0.374351 seconds
+Rank 9 - Communication time: 0.369173 seconds
+Rank 58 - Communication time: 0.385548 seconds
+Rank 76 - Communication time: 0.378422 seconds
+Rank 12 - Communication time: 0.380860 seconds
+Rank 60 - Communication time: 0.378086 seconds
+Rank 72 - Communication time: 0.378003 seconds
+Rank 55 - Communication time: 0.371969 seconds
+Rank 8 - Communication time: 0.382986 seconds
+Rank 31 - Communication time: 0.377159 seconds
+Rank 54 - Communication time: 0.378886 seconds
+Rank 30 - Communication time: 0.380723 seconds
+Rank 35 - Communication time: 0.393074 seconds
+Rank 34 - Communication time: 0.399608 seconds
+Rank 27 - Communication time: 0.376624 seconds
+Rank 26 - Communication time: 0.380916 seconds
+Rank 28 - Communication time: 0.382312 seconds
+Rank 24 - Communication time: 0.381884 seconds
+Rank 16 - Communication time: 0.393592 seconds
+Rank 37 - Communication time: 0.381602 seconds
+Rank 52 - Communication time: 0.380822 seconds
+Rank 56 - Communication time: 0.382719 seconds
+Rank 41 - Communication time: 0.407814 seconds
+Rank 43 - Communication time: 0.407706 seconds
+Rank 42 - Communication time: 0.407597 seconds
+Rank 45 - Communication time: 0.404404 seconds
+Rank 33 - Communication time: 0.403568 seconds
+Rank 36 - Communication time: 0.398259 seconds
+Rank 47 - Communication time: 0.404310 seconds
+Rank 46 - Communication time: 0.425936 seconds
+Rank 44 - Communication time: 0.424019 seconds
+Rank 40 - Communication time: 0.414489 seconds
+Rank 48 - Communication time: 0.425686 seconds
+Rank 32 - Communication time: 0.429470 seconds
+Execution time: 0.699295
+Rank 0 - Communication time: 0.396026 seconds
+Rank 64 - Communication time: 0.419158 seconds
+# ----------------------------------------
+# Finished running coletiva with matrix size 1024 and 80 processes after  seconds
+# ----------------------------------------
