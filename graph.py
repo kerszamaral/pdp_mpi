@@ -87,6 +87,34 @@ def plot_execution_time_vs_matrix_size(data: dict, num_cores: int, output_dir: P
     plt.savefig(output_dir / f"execution_time_vs_matrix_size_{num_cores}.png")
     plt.close()
 
+def plot_communication_time_vs_matrix_size(data: dict, num_cores: int, output_dir: Path):
+    """
+    Plots the average communication time vs. the matrix size for a given number of cores.
+
+    Args:
+        data: The parsed data.
+        num_cores: The number of cores to plot.
+        output_dir: The output directory for plots.
+    """
+    plt.figure(figsize=(10, 6))
+    for exec_type in ExecutionType:
+        matrix_sizes = sorted([k[1] for k in data if k[0] == exec_type and k[2] == num_cores])
+        avg_comm_times = []
+        for m in matrix_sizes:
+            comm_times_str = data[(exec_type, m, num_cores)]['communication_time'].values()
+            comm_times = [float(t) for t in comm_times_str]
+            avg_comm_times.append(np.mean(comm_times))
+        if matrix_sizes:
+            plt.plot(matrix_sizes, avg_comm_times, marker='o', linestyle='-', label=str(exec_type))
+
+    plt.xlabel("Matrix Size")
+    plt.ylabel("Average Communication Time (s)")
+    plt.title(f"Communication Time vs. Matrix Size (Cores: {num_cores})")
+    plt.legend()
+    plt.grid(True)
+    plt.savefig(output_dir / f"communication_time_vs_matrix_size_{num_cores}.png")
+    plt.close()
+
 def plot_communication_time_vs_cores(data: dict, matrix_size: int, output_dir: Path):
     """
     Plots the average communication time vs. the number of cores for a given matrix size.
@@ -162,6 +190,7 @@ def main() -> int:
 
     for cores in core_counts:
         plot_execution_time_vs_matrix_size(parsed_data, cores, output_dir)
+        plot_communication_time_vs_matrix_size(parsed_data, cores, output_dir)
 
     print(f"Plots generated successfully!")
 
