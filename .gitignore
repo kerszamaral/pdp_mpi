@@ -45,3 +45,4 @@ pdp_mpi_parsed/
 __pycache__/
 *.pyc
 *.json
+*.png

@@ -71,10 +71,18 @@ def main() -> int:
             filtered_content = [line.strip() for line in content if not line.strip().startswith("#")]
             sorted_content = sorted(filtered_content)
             try:
-                execution_time = sorted_content[0].split(":")[1].strip()
+                for line in sorted_content:
+                    if "Execution time" in line:
+                        index_of_execution_time = sorted_content.index(line)
+                        break
+                else:
+                    raise ValueError("Execution time not found in the file.")
+
+                execution_time = sorted_content.pop(index_of_execution_time)
+                execution_time = execution_time.split(":")[1].strip().split(" ")[0].strip()
                 results[key]["execution_time"] = execution_time
                 comm_time_per_rank = {}
-                for line in sorted_content[1:]:
+                for line in sorted_content:
                     rank, comm_time = line.split(": ")
                     rank = rank.split(" ")[1].strip()
                     comm_time = comm_time.split(" ")[0].strip()
